@@ -2,15 +2,23 @@
     //Problema: Procurar letra
     //Peça para o usuário digitar UMA palavra.
     //Peça para o usuário digitar a letra que deseja encontrar na palavra que acabou de digitar.
-
     //Apresente para o usuário se a LETRA que ele quer procurar existe ou não na palavra digitada e qual a primeira posição da LETRA na PALAVRA.
 
     //ENTRADA
-
+    const palavra = prompt ("informe uma unica palavra");
+    const letra = prompt ("informe a letra que voce ");
 
     //PROCESSAMENTO
+    const pesquisa = palavra.search(letra);
+    
+    if (pesquisa >= 0) {
+        alert (` a letra "${letra}" está na posição ${pesquisa + 1}`)
+    }
 
-
+    else{
+    alert ("letra não encontrada")
+    }
+    
     //SAÍDA
 
 </script>
