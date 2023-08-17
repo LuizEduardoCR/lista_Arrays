@@ -10,11 +10,34 @@
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    const carro1 = prompt(`Informe um novo carro para a lista:`);
+    const tipoCarro1 = Number(prompt(`Informe o tipo do carro ${carro1} sendo: 1 - SUV, 2 - Sedan e 3 - Hatch`));
+    
+    const carro2 = prompt(`Informe um novo carro para a lista:`);
+    const tipoCarro2 = Number(prompt(`Informe o tipo do carro ${carro2} sendo: 1 - SUV, 2 - Sedan e 3 - Hatch`));
 
+    const carro3 = prompt(`Informe um novo carro para a lista:`);
+    const tipoCarro3 = Number(prompt(`Informe o tipo do carro ${carro3} sendo: 1 - SUV, 2 - Sedan e 3 - Hatch`));
 
     //PROCESSAMENTO
+    if (tipoCarro1 == 1) carrosSUV.push(carro1);
+    else if (tipoCarro1 == 2) cassosSedan.push(carro1);
+    else if (tipoCarro1 == 3) cassosSedan.push(carro1);
 
+    if (tipoCarro2 == 1) carrosSUV.push(carro2);
+    else if (tipoCarro2 == 2) cassosSedan.push(carro2);
+    else if (tipoCarro2 == 3) cassosSedan.push(carro2);
+
+    if (tipoCarro3 == 1) carrosSUV.push(carro3);
+    else if (tipoCarro3 == 2) cassosSedan.push(carro3);
+    else if (tipoCarro3 == 3) cassosSedan.push(carro3);
 
     //SAÍDA
-
+    alert (`A lista final de carros SUV é ${carrosSUV}`);
+    alert (`A lista de carros Sedan é ${cassosSedan}`);
+    alert (`A lista final de carros Hatch ${carrosHatch}`);
 </script>
